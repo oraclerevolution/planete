@@ -1,0 +1,67 @@
+
+[class*="grid-"]{
+    float: left;
+    padding: 0.6rem;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    max-width: 100%;
+    margin: auto;
+    width: 100%;
+    background-color: lightgray;
+    height: auto;
+    position: relative;
+}
+@media only screen and (min-width:1065px){ /*grand ecran*/
+    .grid-tg-0{
+        width: 100%;
+    }
+    .grid-tg-15{
+        width: 15%;
+    }
+    .grid-tg-60{
+        width: 60%;
+    }
+    .grid-tg-35{
+        width: 38%;
+    }
+    .grid-tg-30{
+        width: 30%;
+    }
+    
+    
+}
+@media only screen and (max-width:1065px){ /*tablette portrait*/
+    .grid-tbp-0{
+        width: 100%;
+    }
+    .grid-tg-15{
+        width: 15%;
+    }
+    .grid-tbp-60{
+        width: 60%;
+    }
+    .grid-tbp-35{
+        width: 38%;
+    }
+    .grid-tbp-30{
+        width: 45%;
+    }
+    .exploration{
+        overflow: scroll;
+    }
+    body{background-color: yellow;}
+}
+@media only screen and (max-width:785px){ /*tablette*/
+    .grid-tb-0{
+        width: 100%;
+    }
+    body{background-color: blue;}
+}
+@media only screen and (max-width:535px){ /*smartphone*/
+    .grid-sm-0{
+        width: 100%;
+    }
+}
